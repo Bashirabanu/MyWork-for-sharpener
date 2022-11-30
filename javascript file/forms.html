@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            h2{
+                color:tomato;
+                text-align:center;
+            }
+            body{
+                border:2px solid orangered;
+                margin-left:300px;
+                margin-right:450px;
+                margin-bottom:400px;
+                background: white;
+            }
+                html{
+
+                background: radial-gradient(circle, black, white);
+                background-position: 0 0,10px 10px;
+                background-size: 21px 21px;
+            }
+        </style>
+        <meta>
+    </meta>
+    </head>
+    <body>
+        <h2>Book a Call</h2>
+        <h5 style="text-align:center">Book a call slot and our representative will call you within 1hr of selected time</h5>
+        <hr width="80%" size="4px">
+        <form action="#" onsubmit="registerUser()">
+            NAME:<input type="text" id="name" name="Name" size="100" required/><br><br>
+            EMAIL:<input type="email" id="email" name="Email" size="100" required/><br><br>
+            PHONE:<input type="tel" id="Phone" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="100" /><br><br>
+            Time for call: <input type="date" id="date" name="date" max="22/11/2020" style="width:300px" />
+            <input type="time" id="Time" name="Time" style="width:300px" />
+            <br><br>
+            <input type="submit" value="GET A CALL" style="background-color:tomato;height:40px; width:750px"  /> 
+            <script>
+                function registerUser(){
+                    const name=document.getElementById("name").value;
+                    const mail=document.getElementById("email").value;
+                    console.log(name);
+                    console.log(mail);
+                }
+            </script>
+            
+        </form>
+    </body>
+</html>
