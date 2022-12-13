@@ -1,4 +1,4 @@
-// USER FORM SCRIPT
+// Task 10 for booking appoinment app
 
 // Put DOM elements into variables
 const myForm = document.querySelector('#my-form');
