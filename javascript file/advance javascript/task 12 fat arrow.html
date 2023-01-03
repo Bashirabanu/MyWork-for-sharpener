@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>advanced javascript</title>
+</head>
+<body>
+    <script >
+
+      //function with parameter
+       var getA = function(a){
+        return a;
+       };
+       let getA = a => a;
+       console.log(getA(1));
+
+       //square function
+       let square = a => a*a;
+       let square = (a) => {return a*a};
+       console.log(square(2));
+      
+       //square function with arrow
+       var a=4;
+       let square = () => {return a*a};
+       console.log(square());
+
+       //multiplication function with arrow 
+      let mult = (a,b) => {return a*a};
+       console.log(mult(2,4));
+
+       //setTimeout fucntion
+      var x = function(){
+        var that =this;
+        this.val=1;
+        setTimeout(function(){
+          that.val++;
+          console.log(that.val)
+        },1)
+      };
+
+        //setTimeout fucntion using arrow
+      var x = function(){
+        this.val=1;
+        setTimeout(()=>{
+          this.val++;
+          console.log(this.val)
+        },1)
+      };
+      var xx = new x();
+
+      //function with arquments
+      var x = function(){
+        console.log(arguments[0]);
+      };
+      x(1,2,3);
+
+      //function with arquments using barrow function
+      var x = (...n)=>{
+        console.log(n[0]);
+      };
+      x(1,2,3);
+
+
+
+</script>
+</body>
+</html>
