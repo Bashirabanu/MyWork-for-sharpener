@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>advanced javascript</title>
+</head>
+<body>
+    <script >
+
+const name = (arr) => {
+    let counter = 0;
+    return () => {
+        console.log(`Hello ${arr[counter]}.`);
+        counter++;
+    }
+}
+let fun = name(["Ram","Shyam"]);
+fun()// Print Hello Ram
+fun()//print Hello Shyam
+
+var b = function(){
+
+console.log("b called");
+
+}
+
+b();
+</script>
+</body>
+</html>

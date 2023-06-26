@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>advanced javascript</title>
+</head>
+<body>
+    <script >
+// function x(){
+// let a = 10;
+// function y(){
+// console.log(a);
+// }
+// a= 50;
+// return y;
+// }
+// const z = x()
+// console.log(z());
+
+let multiply = function(x){
+    return function(y){
+        console.log(x*y);
+    }
+}
+let multiplyByTwo = multiply(2);
+multiplyByTwo(3);
+    </script>
+</body>
+</html>
